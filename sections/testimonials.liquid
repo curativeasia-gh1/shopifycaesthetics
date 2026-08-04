@@ -1,0 +1,201 @@
+{{ 'section-testimonials.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .testimonials-{{ section.id }} {
+    --testimonials-columns-desktop: {{ section.settings.columns_desktop }};
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="testimonials testimonials-{{ section.id }} page-width section-{{ section.id }}-padding{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    {%- if section.settings.heading != blank or section.settings.subheading != blank -%}
+      <div class="testimonials__header title-wrapper-with-link">
+        <div>
+          {%- if section.settings.heading != blank -%}
+            <h2 class="testimonials__heading inline-richtext {{ section.settings.heading_size }}">
+              {{ section.settings.heading }}
+            </h2>
+          {%- endif -%}
+          {%- if section.settings.subheading != blank -%}
+            <p class="testimonials__subheading">{{ section.settings.subheading }}</p>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <ul class="testimonials__grid list-unstyled" role="list">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when '@app' -%}
+              <li class="testimonials__item" {{ block.shopify_attributes }}>
+                {% render block %}
+              </li>
+            {%- when 'testimonial' -%}
+              <li class="testimonials__item color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
+                <blockquote class="testimonials__quote-block">
+                  {%- if block.settings.rating > 0 -%}
+                    <span class="testimonials__rating" role="img" aria-label="Rated {{ block.settings.rating }} out of 5 stars">
+                      {%- for i in (1..5) -%}
+                        {%- if i <= block.settings.rating -%}
+                          <span class="testimonials__star" aria-hidden="true">&#9733;</span>
+                        {%- else -%}
+                          <span class="testimonials__star testimonials__star--empty" aria-hidden="true">&#9733;</span>
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </span>
+                  {%- endif -%}
+                  <p class="testimonials__quote">&ldquo;{{ block.settings.quote }}&rdquo;</p>
+                  <footer class="testimonials__author">
+                    <cite>{{ block.settings.author }}</cite>
+                    {%- if block.settings.author_detail != blank -%}
+                      <span class="testimonials__author-detail">{{ block.settings.author_detail }}</span>
+                    {%- endif -%}
+                  </footer>
+                </blockquote>
+              </li>
+          {%- endcase -%}
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "class": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Loved by our customers",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h1", "label": "Small" },
+        { "value": "h0", "label": "Medium" },
+        { "value": "hxl", "label": "Large" }
+      ],
+      "default": "h0",
+      "label": "Heading size"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "Real results from real skin",
+      "label": "Subheading"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 3,
+      "label": "Number of columns on desktop"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Section color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 52
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "range",
+          "id": "rating",
+          "min": 0,
+          "max": 5,
+          "step": 1,
+          "default": 5,
+          "label": "Rating",
+          "info": "Set to 0 to hide the star rating"
+        },
+        {
+          "type": "textarea",
+          "id": "quote",
+          "default": "My skin has never felt this hydrated and even-toned. The routine is simple and the results were visible within a few weeks.",
+          "label": "Quote"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "default": "Verified Customer",
+          "label": "Author name"
+        },
+        {
+          "type": "text",
+          "id": "author_detail",
+          "default": "Verified Buyer",
+          "label": "Author detail",
+          "info": "For example, a location or \"Verified Buyer\""
+        },
+        {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "Card color scheme",
+          "default": "scheme-2"
+        }
+      ]
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials",
+      "blocks": [
+        { "type": "testimonial" },
+        { "type": "testimonial" },
+        { "type": "testimonial" }
+      ]
+    }
+  ]
+}
+{% endschema %}
