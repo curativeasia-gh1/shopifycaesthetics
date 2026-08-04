@@ -1480,8 +1480,7 @@
       {
         "type": "text",
         "id": "org_registration_number",
-        "label": "Business registration / UEN number (leave blank until confirmed by Curative)",
-        "default": ""
+        "label": "Business registration / UEN number (leave blank until confirmed by Curative)"
       },
       {
         "type": "header",
