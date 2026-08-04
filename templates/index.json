@@ -35,13 +35,14 @@
         "buttons"
       ],
       "settings": {
-        "image_overlay_opacity": 10,
+        "image": "shopify://shop_images/caesthetics-clinical-hero-v1.png",
+        "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-left",
-        "show_text_box": true,
+        "show_text_box": false,
         "image_behavior": "none",
         "desktop_content_alignment": "left",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "mobile_content_alignment": "left",
         "stack_images_on_mobile": false,
         "show_text_below": true
