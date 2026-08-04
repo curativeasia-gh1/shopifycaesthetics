@@ -1,0 +1,200 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "color_scheme": "scheme-1"
+      }
+    },
+    "main": {
+      "type": "editorial-article",
+      "blocks": {
+        "b001": {
+          "type": "heading",
+          "settings": {
+            "text": "What does C-Aesthetics offer?",
+            "level": "h2"
+          }
+        },
+        "b002": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>C-Aesthetics focuses on four connected areas.</p>"
+          }
+        },
+        "b003": {
+          "type": "heading",
+          "settings": {
+            "text": "Dermocosmetic skincare",
+            "level": "h3"
+          }
+        },
+        "b004": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Concern-led skincare developed at the intersection of cosmetic formulation and dermatology-informed care. Our selection may include products for pigmentation, excess sebum, uneven texture, sensitivity, dehydration, visible ageing and skin-barrier support.</p>"
+          }
+        },
+        "b005": {
+          "type": "heading",
+          "settings": {
+            "text": "Professional aesthetic solutions",
+            "level": "h3"
+          }
+        },
+        "b006": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Products created for use within qualified aesthetic practices, including selected cabin products, procedure-support products and professional protocols. Products marked for professional use are not intended for unsupervised home application.</p>"
+          }
+        },
+        "b007": {
+          "type": "heading",
+          "settings": {
+            "text": "Procedure-support skincare",
+            "level": "h3"
+          }
+        },
+        "b008": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Carefully selected products that may support skin comfort, hydration and barrier care before or after an aesthetic procedure, where appropriate. Product selection should follow the manufacturer&rsquo;s instructions and professional advice.</p>"
+          }
+        },
+        "b009": {
+          "type": "heading",
+          "settings": {
+            "text": "Cellular-wellness products",
+            "level": "h3"
+          }
+        },
+        "b010": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Selected NAD+-focused and related wellness products positioned around modern approaches to vitality and healthy ageing. These products must be presented according to their actual formulation, classification and permitted claims.</p>"
+          }
+        },
+        "b011": {
+          "type": "divider",
+          "settings": {}
+        },
+        "b012": {
+          "type": "heading",
+          "settings": {
+            "text": "Our approach",
+            "level": "h2"
+          }
+        },
+        "b013": {
+          "type": "columns",
+          "settings": {
+            "column_count": "2",
+            "col_1_heading": "Concern before trend",
+            "col_1_text": "<p>We begin with what the customer or practitioner is trying to address. This creates a clearer path from concern to category, product information and routine guidance.</p>",
+            "col_2_heading": "Information before assumption",
+            "col_2_text": "<p>Each product page should explain what the product is, who it is designed for, how it is used and whether professional guidance is required.</p>"
+          }
+        },
+        "b014": {
+          "type": "columns",
+          "settings": {
+            "column_count": "2",
+            "col_1_heading": "Clinic-to-home continuity",
+            "col_1_text": "<p>Professional care does not end when a procedure is completed. Where appropriate, C-Aesthetics connects professionally selected treatments with practical preparation, maintenance and recovery routines.</p>",
+            "col_2_heading": "Responsible communication",
+            "col_2_text": "<p>We aim to describe products accurately and without unnecessary hype. We do not treat ingredient popularity as proof of a finished product&rsquo;s performance, and we do not publish clinical claims without appropriate substantiation.</p>"
+          }
+        },
+        "b015": {
+          "type": "divider",
+          "settings": {}
+        },
+        "b016": {
+          "type": "heading",
+          "settings": {
+            "text": "Why shop with C-Aesthetics?",
+            "level": "h2"
+          }
+        },
+        "b017": {
+          "type": "richtext",
+          "settings": {
+            "content": "<ul><li>A focused selection organised by skin concern and intended use</li><li>Access to professional and home-care categories in one place</li><li>Clear differentiation between consumer and professional-use products</li><li>Practical product education and routine guidance</li><li>Local management and support through Curative Pte Ltd in Singapore</li><li>Secure online purchasing through Shopify</li></ul>"
+          }
+        },
+        "b018": {
+          "type": "heading",
+          "settings": {
+            "text": "Our commitment",
+            "level": "h2"
+          }
+        },
+        "b019": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We want customers and professionals to make informed choices. That means explaining both the potential role and the limitations of every product, maintaining clear professional-use boundaries and updating information when formulations or manufacturer instructions change.</p>"
+          }
+        },
+        "b020": {
+          "type": "heading",
+          "settings": {
+            "text": "Find the right place to begin",
+            "level": "h2"
+          }
+        },
+        "b021": {
+          "type": "cta_group",
+          "settings": {
+            "primary_label": "Shop by Skin Concern",
+            "primary_link": "/collections",
+            "secondary_label": "Explore All Products",
+            "secondary_link": "/collections/all",
+            "tertiary_label": "Make a Professional Enquiry",
+            "tertiary_link": "/pages/contact"
+          }
+        },
+        "b022": {
+          "type": "notice",
+          "settings": {
+            "label": "Important notice",
+            "content": "<p>Information on C-Aesthetics is provided for general education and product discovery. It does not replace diagnosis, treatment or advice from a qualified healthcare professional. Product selection, frequency and combination should be based on individual skin condition, tolerance, the current product label and the manufacturer&rsquo;s instructions. Individual results vary.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b001",
+        "b002",
+        "b003",
+        "b004",
+        "b005",
+        "b006",
+        "b007",
+        "b008",
+        "b009",
+        "b010",
+        "b011",
+        "b012",
+        "b013",
+        "b014",
+        "b015",
+        "b016",
+        "b017",
+        "b018",
+        "b019",
+        "b020",
+        "b021",
+        "b022"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "eyebrow": "About C-Aesthetics",
+        "heading": "Advanced skincare, selected with purpose",
+        "intro": "<p>C-Aesthetics is a Singapore-based online destination for dermocosmetic skincare, professional aesthetic products and emerging skin and cellular-wellness solutions. Managed by Curative Pte Ltd, we bring together products selected around clearly defined concerns and applications&mdash;from pigmentation, blemish-prone skin and visible ageing to sensitivity, dehydration and post-procedure care. Our role is to make specialised products easier to understand and more considered to purchase. Instead of presenting an undifferentiated catalogue, we organise products by concern, skin suitability, routine step and intended use.</p>"
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main"
+  ]
+}

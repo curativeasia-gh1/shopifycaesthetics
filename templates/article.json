@@ -32,9 +32,16 @@
         "share",
         "content"
       ]
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "color_scheme": "scheme-1"
+      }
     }
   },
   "order": [
+    "breadcrumbs",
     "main"
   ]
 }

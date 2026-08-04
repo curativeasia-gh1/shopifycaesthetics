@@ -1,0 +1,164 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "color_scheme": "scheme-1"
+      }
+    },
+    "main": {
+      "type": "editorial-article",
+      "blocks": {
+        "b001": {
+          "type": "heading",
+          "settings": {
+            "text": "What is Curative's role?",
+            "level": "h2"
+          }
+        },
+        "b002": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Curative supports the introduction and development of selected professional skincare brands and product ranges in Asian markets. Depending on the brand and market, this may include:</p><ul><li>Product and range planning</li><li>Local product access and commercial support</li><li>Clinic onboarding</li><li>Product education and team training</li><li>Clinic-to-home routine development</li><li>Patient and customer education materials</li><li>Launch and campaign support</li><li>Professional and product enquiries</li></ul><p>Availability and support services may differ by country, brand and product classification.</p>"
+          }
+        },
+        "b003": {
+          "type": "heading",
+          "settings": {
+            "text": "A concern-led way of working",
+            "level": "h2"
+          }
+        },
+        "b004": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Our work begins with practical needs rather than catalogue size. For clinics, this can mean selecting a focused starter portfolio around pigmentation, oily or blemish-prone skin, visible ageing, sensitivity or procedure recovery. For consumers, it means providing a clearer path from a skin concern to suitable product information and professional advice.</p>"
+          }
+        },
+        "b005": {
+          "type": "heading",
+          "settings": {
+            "text": "Supporting professionals",
+            "level": "h2"
+          }
+        },
+        "b006": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Curative works with appropriate professional partners, which may include aesthetic clinics, dermatology practices, medical spas, skin centres and procedure-based practices. Our aim is to help partners understand how products fit into professional services, maintenance programmes and home-care recommendations. Any professional protocol must follow current manufacturer guidance, local requirements and the practitioner&rsquo;s own assessment.</p>"
+          }
+        },
+        "b007": {
+          "type": "heading",
+          "settings": {
+            "text": "Supporting informed customers",
+            "level": "h2"
+          }
+        },
+        "b008": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>C-Aesthetics gives customers access to clearer product explanations, concern-based navigation and routine education. It does not attempt to replace an individual consultation or diagnose a skin condition. Where a product requires professional supervision, this should be stated clearly. Where a concern is persistent, severe or medically diagnosed, customers should seek advice from an appropriately qualified professional.</p>"
+          }
+        },
+        "b009": {
+          "type": "divider",
+          "settings": {}
+        },
+        "b010": {
+          "type": "heading",
+          "settings": {
+            "text": "Our principles",
+            "level": "h2"
+          }
+        },
+        "b011": {
+          "type": "columns",
+          "settings": {
+            "column_count": "2",
+            "col_1_heading": "Clarity",
+            "col_1_text": "<p>Explain the product&rsquo;s purpose, suitability, use and limitations in language customers can understand.</p>",
+            "col_2_heading": "Credibility",
+            "col_2_text": "<p>Base published information on current manufacturer materials, registered labels and appropriately reviewed evidence.</p>"
+          }
+        },
+        "b012": {
+          "type": "columns",
+          "settings": {
+            "column_count": "2",
+            "col_1_heading": "Continuity",
+            "col_1_text": "<p>Connect clinic care with sensible home-care support where this is appropriate.</p>",
+            "col_2_heading": "Local relevance",
+            "col_2_text": "<p>Consider the practical concerns associated with Asian climates and lifestyles, including year-round ultraviolet exposure, heat, humidity, air-conditioning and frequent aesthetic procedures&mdash;without suggesting that all Asian skin behaves in the same way.</p>"
+          }
+        },
+        "b013": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h3>Responsible access</h3><p>Maintain clear boundaries around professional-use products and avoid encouraging unsafe or unsupervised use.</p>"
+          }
+        },
+        "b014": {
+          "type": "heading",
+          "settings": {
+            "text": "Work with Curative",
+            "level": "h2"
+          }
+        },
+        "b015": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Speak with our team about product information, clinic supply, professional education and partnership opportunities.</p>"
+          }
+        },
+        "b016": {
+          "type": "cta_group",
+          "settings": {
+            "primary_label": "Contact Curative",
+            "primary_link": "/pages/contact",
+            "secondary_label": "Professional Enquiry",
+            "secondary_link": "/pages/contact",
+            "tertiary_label": "Shop C-Aesthetics",
+            "tertiary_link": "/collections/all"
+          }
+        },
+        "b017": {
+          "type": "notice",
+          "settings": {
+            "label": "Information required before publication",
+            "content": "<p>Add the following only after Curative confirms the official details: registered business address, company registration number, general contact email, professional enquiry email, telephone or WhatsApp number, operating hours, supported countries, and official distribution statements for each brand.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b001",
+        "b002",
+        "b003",
+        "b004",
+        "b005",
+        "b006",
+        "b007",
+        "b008",
+        "b009",
+        "b010",
+        "b011",
+        "b012",
+        "b013",
+        "b014",
+        "b015",
+        "b016",
+        "b017"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "eyebrow": "Who We Are",
+        "heading": "The company behind C-Aesthetics",
+        "intro": "<p>C-Aesthetics is managed by Curative Pte Ltd, a Singapore-based company supporting access to specialised skincare, aesthetic products and professional solutions. We work at the point where product selection, professional education and commercial support meet. Through C-Aesthetics, we make concern-led skincare easier to discover online while preserving the distinction between everyday home care and products intended for qualified practitioners.</p>"
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main"
+  ]
+}

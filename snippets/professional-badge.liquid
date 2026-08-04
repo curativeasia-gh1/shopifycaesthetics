@@ -1,0 +1,9 @@
+{%- comment -%}
+  Renders a professional-use badge when custom.professional_only is true on the product.
+  Usage: {% render 'professional-badge', product: product %}
+{%- endcomment -%}
+{%- if product.metafields.custom.professional_only.value == true -%}
+  <span class="professional-badge caption-large">
+    {{ settings.professional_use_label | default: 'Professional use only' }}
+  </span>
+{%- endif -%}

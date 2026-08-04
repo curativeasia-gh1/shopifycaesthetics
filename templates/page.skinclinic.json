@@ -1,0 +1,193 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "color_scheme": "scheme-1"
+      }
+    },
+    "main": {
+      "type": "editorial-article",
+      "blocks": {
+        "b001": {
+          "type": "heading",
+          "settings": {
+            "text": "What makes SkinClinic different?",
+            "level": "h2"
+          }
+        },
+        "b002": {
+          "type": "columns",
+          "settings": {
+            "column_count": "2",
+            "col_1_heading": "Professional heritage",
+            "col_1_text": "<p>SkinClinic was developed for professional skincare and medical-dispensing environments. Its range includes both products intended for qualified practitioners and products designed for home-care routines.</p>",
+            "col_2_heading": "Research and formulation",
+            "col_2_text": "<p>The brand&rsquo;s materials describe an in-house research and development approach using established and next-generation cosmetic ingredients. Individual ingredient concentrations and claims should always be checked against the current product documentation.</p>"
+          }
+        },
+        "b003": {
+          "type": "columns",
+          "settings": {
+            "column_count": "2",
+            "col_1_heading": "Concern-led programmes",
+            "col_1_text": "<p>SkinClinic products are organised around practical objectives rather than passing beauty trends. This helps professionals and customers build focused routines without treating every skin concern in the same way.</p>",
+            "col_2_heading": "Professional-to-home continuity",
+            "col_2_text": "<p>Professional treatments may be supported by suitable daily products for preparation, maintenance, hydration or recovery. Final product selection depends on skin assessment, tolerance and current instructions.</p>"
+          }
+        },
+        "b004": {
+          "type": "divider",
+          "settings": {}
+        },
+        "b005": {
+          "type": "heading",
+          "settings": {
+            "text": "Explore SkinClinic by concern",
+            "level": "h2"
+          }
+        },
+        "b006": {
+          "type": "heading",
+          "settings": {
+            "text": "Pigmentation and uneven tone",
+            "level": "h3"
+          }
+        },
+        "b007": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>The Melanyc family is designed around the appearance of dark spots, uneven tone and pigmentation recurrence. The selected range may include:</p><ul><li><strong>Melanyc Cream:</strong> intensive night care for visible pigmentation and uneven-looking tone</li><li><strong>Melanyc Daily:</strong> maintenance-focused daily care, including routines for dry or sensitive skin when appropriately selected</li><li><strong>Melanyc Serum:</strong> lightweight support for visible spots, luminosity and early signs of ageing</li><li><strong>Melanyc Pro:</strong> advanced care intended for professionally guided routines</li></ul><p>Daily photoprotection is an essential part of a pigmentation-focused routine.</p>"
+          }
+        },
+        "b008": {
+          "type": "heading",
+          "settings": {
+            "text": "Oily, blemish-prone and congested skin",
+            "level": "h3"
+          }
+        },
+        "b009": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Selected SkinClinic products support cleansing, sebum regulation, visible pore refinement and smoother-looking texture without being presented as a cure for acne. Hero products may include Glicolyc Gel Clean, Balance Lotion and Zalyc Serum.</p>"
+          }
+        },
+        "b010": {
+          "type": "heading",
+          "settings": {
+            "text": "Visible ageing, texture and firmness",
+            "level": "h3"
+          }
+        },
+        "b011": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>SkinClinic&rsquo;s ageing-focused portfolio includes antioxidant serums, retinoid night care, hydration and firming products. Selected products may include Ferulast, Retiplus, Redensity, Proteo C and Retinol One Million. Retinoid products require careful introduction, tolerance monitoring and appropriate daytime photoprotection.</p>"
+          }
+        },
+        "b012": {
+          "type": "heading",
+          "settings": {
+            "text": "Sensitive and redness-prone skin",
+            "level": "h3"
+          }
+        },
+        "b013": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>The Rosanic and related sensitive-skin products focus on comfort, hydration and barrier support. Consumer copy should describe redness-prone or rosacea-prone skin where permitted and should not claim to treat rosacea as a medical condition. Selected products may include Rosanic Cream, Sensitive Cleanser, Refresh Toner and Hydro-Nourishing Cream.</p>"
+          }
+        },
+        "b014": {
+          "type": "heading",
+          "settings": {
+            "text": "Hydration and recovery",
+            "level": "h3"
+          }
+        },
+        "b015": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Selected recovery products are designed to support hydration, comfort and the appearance of stressed or sensitised skin. These may include Hialucos, Restoring Cream and Ferulast, depending on professional advice and the procedure involved.</p>"
+          }
+        },
+        "b016": {
+          "type": "divider",
+          "settings": {}
+        },
+        "b017": {
+          "type": "heading",
+          "settings": {
+            "text": "A professional-to-home approach",
+            "level": "h2"
+          }
+        },
+        "b018": {
+          "type": "richtext",
+          "settings": {
+            "content": "<ol><li><strong>Assess</strong> &mdash; A qualified professional considers the primary concern, current skin condition, tolerance and relevant procedure history.</li><li><strong>Select</strong> &mdash; Suitable professional products and home-care options are selected around the treatment or routine objective.</li><li><strong>Maintain</strong> &mdash; A practical home routine supports consistency, comfort and ongoing cosmetic care.</li></ol><p>The examples published on C-Aesthetics are for product discovery and education. They are not personalised prescriptions.</p>"
+          }
+        },
+        "b019": {
+          "type": "heading",
+          "settings": {
+            "text": "Shop selected SkinClinic products",
+            "level": "h2"
+          }
+        },
+        "b020": {
+          "type": "cta_group",
+          "settings": {
+            "primary_label": "Shop SkinClinic",
+            "primary_link": "/collections/skinclinic",
+            "secondary_label": "Explore by Concern",
+            "secondary_link": "/collections",
+            "tertiary_label": "Ask About Clinic Supply",
+            "tertiary_link": "/pages/contact"
+          }
+        },
+        "b021": {
+          "type": "notice",
+          "settings": {
+            "label": "SkinClinic product notice",
+            "content": "<p>Product names, sizes, ingredients, formulations, directions, availability and approved claims may change or differ between markets. Refer to the product supplied, its current label and manufacturer instructions. Products marked for professional use should be handled only by appropriately qualified practitioners.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b001",
+        "b002",
+        "b003",
+        "b004",
+        "b005",
+        "b006",
+        "b007",
+        "b008",
+        "b009",
+        "b010",
+        "b011",
+        "b012",
+        "b013",
+        "b014",
+        "b015",
+        "b016",
+        "b017",
+        "b018",
+        "b019",
+        "b020",
+        "b021"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "eyebrow": "About SkinClinic",
+        "heading": "Professional Spanish dermocosmetics, selected by skin concern",
+        "intro": "<p>SkinClinic is a Spanish professional dermocosmetic brand with more than 30 years of skincare-development experience. Its portfolio brings together professional cabin products and practical home-care solutions for concerns including pigmentation, excess sebum, visible ageing, sensitive skin, dehydration and post-procedure recovery. Through C-Aesthetics, Curative Pte Ltd provides access to selected SkinClinic products and supporting information in Singapore. Product availability and approved claims depend on the local range, current formulation and product classification.</p>"
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main"
+  ]
+}

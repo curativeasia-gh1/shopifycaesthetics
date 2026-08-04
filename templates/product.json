@@ -93,10 +93,24 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-info-tabs": {
+      "type": "product-metafield-tabs",
+      "settings": {
+        "color_scheme": "scheme-1"
+      }
     }
   },
   "order": [
+    "breadcrumbs",
     "main",
+    "product-info-tabs",
     "disclosures",
     "related-products"
   ]

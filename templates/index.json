@@ -3,33 +3,45 @@
     "hero": {
       "type": "image-banner",
       "blocks": {
+        "eyebrow": {
+          "type": "text",
+          "settings": {
+            "text": "Clinical skincare, curated in Singapore",
+            "text_style": "uppercase"
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Clinically-tested skincare, formulated for visible results",
-            "heading_size": "hxl"
+            "heading": "Targeted science for skin in progress.",
+            "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Dermatologist-informed formulas built around your skin's real needs.",
+            "text": "Shop dermocosmetic skincare and advanced aesthetic solutions selected for specific skin concerns, professional procedures and post-treatment recovery.",
             "text_style": "body"
           }
         },
         "buttons": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop best sellers",
-            "button_link_1": "shopify://collections/best-sellers",
+            "button_label_1": "Shop all products",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
-            "button_label_2": "Explore facial care",
-            "button_link_2": "shopify://collections/facial-care",
+            "button_label_2": "Shop by concern",
+            "button_link_2": "shopify://collections",
             "button_style_secondary_2": true
           }
         }
       },
-      "block_order": ["heading", "text", "buttons"],
+      "block_order": [
+        "eyebrow",
+        "heading",
+        "text",
+        "buttons"
+      ],
       "settings": {
         "image_overlay_opacity": 10,
         "image_height": "large",
@@ -37,92 +49,93 @@
         "show_text_box": true,
         "image_behavior": "none",
         "desktop_content_alignment": "left",
-        "color_scheme": "scheme-2",
-        "mobile_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "mobile_content_alignment": "left",
         "stack_images_on_mobile": false,
         "show_text_below": true
       }
     },
-    "shop-by-category": {
-      "type": "collection-list",
-      "blocks": {
-        "collection-1": {
-          "type": "featured_collection",
-          "settings": { "collection": "facial-care" }
-        },
-        "collection-2": {
-          "type": "featured_collection",
-          "settings": { "collection": "body-care" }
-        },
-        "collection-3": {
-          "type": "featured_collection",
-          "settings": { "collection": "anti-aging" }
-        },
-        "collection-4": {
-          "type": "featured_collection",
-          "settings": { "collection": "supplements" }
-        }
-      },
-      "block_order": ["collection-1", "collection-2", "collection-3", "collection-4"],
+    "trust-strip": {
+      "type": "trust-strip",
       "settings": {
-        "title": "Shop by category",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": true,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 52,
-        "padding_bottom": 28
+        "color_scheme": "scheme-2"
       }
     },
-    "brand-story": {
-      "type": "rich-text",
+    "concern-grid": {
+      "type": "concern-grid",
+      "settings": {
+        "color_scheme": "scheme-1"
+      },
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "concern-1": {
+          "type": "concern",
           "settings": {
-            "heading": "Backed by science, inspired by skin",
-            "heading_size": "h1"
+            "title": "Acne and congestion",
+            "link": "shopify://collections"
           }
         },
-        "text": {
-          "type": "text",
+        "concern-2": {
+          "type": "concern",
           "settings": {
-            "text": "<p>Every C-Aesthetics formula is developed with dermatologists and tested for real, measurable results \u2014 not just marketing claims. We combine clinically-studied active ingredients with clean, skin-safe bases to create routines that work for real, everyday skin.</p>"
+            "title": "Pigmentation and uneven tone",
+            "link": "shopify://collections"
           }
         },
-        "button": {
-          "type": "buttons",
+        "concern-3": {
+          "type": "concern",
           "settings": {
-            "button_label_1": "Our approach",
-            "button_link_1": "shopify://pages/about-us",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": ""
+            "title": "Sensitivity and redness",
+            "link": "shopify://collections"
+          }
+        },
+        "concern-4": {
+          "type": "concern",
+          "settings": {
+            "title": "Dryness and barrier support",
+            "link": "shopify://collections"
+          }
+        },
+        "concern-5": {
+          "type": "concern",
+          "settings": {
+            "title": "Fine lines and skin ageing",
+            "link": "shopify://collections"
+          }
+        },
+        "concern-6": {
+          "type": "concern",
+          "settings": {
+            "title": "Dullness and uneven texture",
+            "link": "shopify://collections"
+          }
+        },
+        "concern-7": {
+          "type": "concern",
+          "settings": {
+            "title": "Post-procedure recovery",
+            "link": "shopify://collections"
           }
         }
       },
-      "block_order": ["heading", "text", "button"],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 52,
-        "padding_bottom": 52
-      }
+      "block_order": [
+        "concern-1",
+        "concern-2",
+        "concern-3",
+        "concern-4",
+        "concern-5",
+        "concern-6",
+        "concern-7"
+      ]
     },
-    "bestsellers": {
+    "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Best sellers",
-        "heading_size": "h1",
-        "description": "The formulas our customers reorder again and again.",
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "A merchant-selected edit of dermocosmetic and professional aesthetic products.",
         "show_description": true,
         "description_style": "body",
-        "collection": "best-sellers",
+        "collection": "all",
         "products_to_show": 8,
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
@@ -130,55 +143,92 @@
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "swipe_on_mobile": true,
-        "image_ratio": "square",
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
-        "show_vendor": false,
+        "show_vendor": true,
         "show_rating": false,
-        "quick_add": "standard",
+        "quick_add": "none",
         "columns_mobile": "2",
-        "padding_top": 52,
+        "padding_top": 44,
         "padding_bottom": 36
       }
     },
-    "technology": {
-      "type": "image-with-text",
+    "advanced-categories": {
+      "type": "advanced-categories",
+      "settings": {
+        "color_scheme": "scheme-2"
+      },
       "blocks": {
-        "caption": {
-          "type": "caption",
+        "exosome": {
+          "type": "category",
           "settings": {
-            "caption": "Our technology",
-            "text_style": "uppercase",
-            "text_size": "small"
+            "title": "Exosome solutions",
+            "text": "<p>Explore exosome-based topical and professional solutions selected for skin-conditioning and post-procedure protocols. Formulations, sources and concentrations vary by product.</p>",
+            "link_label": "Explore exosome solutions",
+            "link": "shopify://collections"
           }
         },
+        "microneedling": {
+          "type": "category",
+          "settings": {
+            "title": "Microneedling",
+            "text": "<p>Discover professional microneedling products, accessories and supporting skincare for carefully planned treatment protocols.</p>",
+            "badge": "Includes professional-only devices",
+            "link_label": "Explore microneedling",
+            "link": "shopify://collections"
+          }
+        },
+        "nad": {
+          "type": "category",
+          "settings": {
+            "title": "NAD+",
+            "text": "<p>Explore NAD+-focused products positioned around cellular wellness, vitality and healthy-ageing routines.</p>",
+            "link_label": "Explore NAD+",
+            "link": "shopify://collections"
+          }
+        }
+      },
+      "block_order": [
+        "exosome",
+        "microneedling",
+        "nad"
+      ]
+    },
+    "standard": {
+      "type": "image-with-text",
+      "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "C-VITAL Complex\u2122",
+            "heading": "Selected with purpose. Explained with clarity.",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>A biomimetic peptide and antioxidant complex developed to support the skin barrier, improve visible texture, and reduce the look of fine lines over time \u2014 with efficacy assessed through in-house clinical testing.</p>",
+            "text": "We curate dermocosmetic and professional aesthetic solutions according to formulation, intended application and relevance to defined skin concerns. Clear product information helps customers understand what a product is, who it is for and where it belongs in a routine or professional protocol.",
             "text_style": "body"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Shop anti-aging",
-            "button_link": "shopify://collections/anti-aging",
-            "button_style_secondary": false
+            "button_label": "Our approach",
+            "button_link": "/pages/about-c-aesthetics",
+            "button_style_secondary": true
           }
         }
       },
-      "block_order": ["caption", "heading", "text", "button"],
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
       "settings": {
-        "height": "adapt",
+        "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
@@ -186,107 +236,94 @@
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-5",
-        "color_scheme": "scheme-5",
-        "padding_top": 52,
-        "padding_bottom": 52
-      }
-    },
-    "why-choose-us": {
-      "type": "collapsible-content",
-      "blocks": {
-        "row-1": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Dermatologist formulated",
-            "icon": "check_mark",
-            "row_content": "<p>Every formula is developed in consultation with dermatologists and tested before it reaches your routine.</p>"
-          }
-        },
-        "row-2": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Clean, purposeful ingredients",
-            "icon": "leaf",
-            "row_content": "<p>We choose ingredients for what they do for your skin, not for the marketing story. No unnecessary fillers.</p>"
-          }
-        },
-        "row-3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Cruelty-free",
-            "icon": "heart",
-            "row_content": "<p>None of our products or ingredients are tested on animals, at any stage of development.</p>"
-          }
-        },
-        "row-4": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Fast, tracked shipping",
-            "icon": "truck",
-            "row_content": "<p>Every order ships with tracking, with expedited options available at checkout.</p>"
-          }
-        }
-      },
-      "block_order": ["row-1", "row-2", "row-3", "row-4"],
-      "settings": {
-        "caption": "",
-        "heading": "The C-Aesthetics difference",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "container_color_scheme": "scheme-2",
+        "section_color_scheme": true,
         "color_scheme": "scheme-1",
-        "open_first_collapsible_row": true,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
         "padding_top": 52,
         "padding_bottom": 52
       }
     },
-    "testimonials": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial-1": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "quote": "My skin has never felt this hydrated and even-toned. The routine is simple and I saw a difference within a few weeks.",
-            "author": "Maria G.",
-            "author_detail": "Verified Buyer",
-            "color_scheme": "scheme-2"
-          }
-        },
-        "testimonial-2": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "quote": "Finally a skincare line that explains why each ingredient is there. My redness has calmed down noticeably.",
-            "author": "Alex T.",
-            "author_detail": "Verified Buyer",
-            "color_scheme": "scheme-2"
-          }
-        },
-        "testimonial-3": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 4,
-            "quote": "The anti-aging set is now a permanent part of my nightly routine. Lightweight but you can feel it working.",
-            "author": "Priya S.",
-            "author_detail": "Verified Buyer",
-            "color_scheme": "scheme-2"
-          }
-        }
-      },
-      "block_order": ["testimonial-1", "testimonial-2", "testimonial-3"],
+    "educational-content": {
+      "type": "featured-blog",
       "settings": {
-        "heading": "Loved by our customers",
-        "heading_size": "h0",
-        "subheading": "Real results from real skin",
+        "heading": "Skin Journal",
+        "heading_size": "h2",
+        "blog": "news",
+        "post_limit": 3,
         "columns_desktop": 3,
-        "color_scheme": "scheme-1",
+        "show_view_all": true,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "color_scheme": "scheme-2",
         "padding_top": 52,
         "padding_bottom": 52
+      }
+    },
+    "faq": {
+      "type": "faq-accordion",
+      "blocks": {
+        "faq-1": {
+          "type": "question",
+          "settings": {
+            "question": "What is dermocosmetic skincare?",
+            "answer": "<p>Dermocosmetic skincare sits between everyday cosmetics and dermatology-informed care, typically formulated with concentrated active ingredients and organised around a specific skin concern.</p>"
+          }
+        },
+        "faq-2": {
+          "type": "question",
+          "settings": {
+            "question": "How do I choose products for my skin concern?",
+            "answer": "<p>Start with the concern you want to address, then review each product's stated purpose, suitability and usage instructions. Introduce new actives gradually and monitor tolerance.</p>"
+          }
+        },
+        "faq-3": {
+          "type": "question",
+          "settings": {
+            "question": "Are all C-Aesthetics products suitable for home use?",
+            "answer": "<p>No. Products intended only for trained or qualified professionals are clearly labelled and are not sold for unsupervised home application.</p>"
+          }
+        },
+        "faq-4": {
+          "type": "question",
+          "settings": {
+            "question": "What is an exosome skincare product?",
+            "answer": "<p>A topical formulation marketed with exosome-derived or extracellular-vesicle-related ingredients. Composition, source and supporting evidence differ between products.</p>"
+          }
+        },
+        "faq-5": {
+          "type": "question",
+          "settings": {
+            "question": "Is microneedling suitable for everyone?",
+            "answer": "<p>Suitability depends on individual skin condition, medical history and professional assessment. Professional devices should be used only by qualified practitioners.</p>"
+          }
+        },
+        "faq-6": {
+          "type": "question",
+          "settings": {
+            "question": "Which products can be used after an aesthetic procedure?",
+            "answer": "<p>This depends on the specific treatment, current skin condition and your practitioner's instructions. Always follow their guidance.</p>"
+          }
+        },
+        "faq-7": {
+          "type": "question",
+          "settings": {
+            "question": "When should I consult a qualified professional?",
+            "answer": "<p>For persistent, severe or diagnosed skin conditions, or before starting a professional-use product or procedure-related routine.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "faq-5",
+        "faq-6",
+        "faq-7"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "heading": "Frequently asked questions"
       }
     },
     "newsletter": {
@@ -295,14 +332,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Join the C-Aesthetics community",
+            "heading": "Understand more. Choose better.",
             "heading_size": "h1"
           }
         },
         "paragraph": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Skincare tips, early access to new formulas, and a welcome discount on your first order.</p>"
+            "text": "<p>Receive new product notes, practical skin education and considered offers from C-Aesthetics. By subscribing you agree to receive marketing emails; you can unsubscribe at any time. See our Privacy Policy.</p>"
           }
         },
         "email_form": {
@@ -310,9 +347,13 @@
           "settings": {}
         }
       },
-      "block_order": ["heading", "paragraph", "email_form"],
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email_form"
+      ],
       "settings": {
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-4",
         "full_width": true,
         "padding_top": 52,
         "padding_bottom": 52
@@ -321,12 +362,13 @@
   },
   "order": [
     "hero",
-    "shop-by-category",
-    "brand-story",
-    "bestsellers",
-    "technology",
-    "why-choose-us",
-    "testimonials",
+    "trust-strip",
+    "concern-grid",
+    "featured-collection",
+    "advanced-categories",
+    "standard",
+    "educational-content",
+    "faq",
     "newsletter"
   ]
 }

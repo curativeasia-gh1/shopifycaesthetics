@@ -1,0 +1,45 @@
+{%- comment -%}
+  Organization + WebSite structured data.
+  Populated from Settings > C-Aesthetics: Organization & compliance and native Shopify shop data only.
+  Do not hardcode addresses, phone numbers or registration numbers here — those must come from
+  merchant-confirmed theme settings so the store never publishes unverified company details.
+{%- endcomment -%}
+{%- if template == 'index' -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": {{ shop.name | json }},
+      "url": {{ request.origin | append: page.url | default: shop.url | json }},
+      "description": {{ settings.org_managed_statement | json }},
+      {%- if settings.org_registration_number != blank -%}
+      "identifier": {{ settings.org_registration_number | json }},
+      {%- endif -%}
+      "areaServed": {{ settings.org_country | json }},
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": {{ settings.org_legal_name | json }},
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": {{ settings.org_country | json }}
+        }
+      }
+    }
+  </script>
+{%- endif -%}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ shop.name | json }},
+    "url": {{ shop.url | json }},
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "{{ shop.url }}/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+</script>

@@ -1,0 +1,299 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "color_scheme": "scheme-1"
+      }
+    },
+    "main": {
+      "type": "editorial-article",
+      "blocks": {
+        "b001": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Ingredients can help explain why a product belongs in a routine, but an ingredient name alone does not establish the performance or suitability of a finished formula. Concentration, delivery system, pH, supporting ingredients, packaging, frequency of use and individual tolerance all matter. This library introduces ingredients identified in the SkinClinic materials supplied to Curative. Always confirm the final ingredient list on the current product label.</p>"
+          }
+        },
+        "b002": {
+          "type": "heading",
+          "settings": {
+            "text": "Antioxidants and luminosity",
+            "level": "h2"
+          }
+        },
+        "b003": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Vitamin C</h4><p><strong>What is it?</strong> Vitamin C is an antioxidant used in skincare to support a brighter-looking complexion and help protect the skin from visible effects associated with environmental oxidative stress.</p><p><strong>Where does it appear?</strong> Supplier materials identify vitamin C or stable vitamin C derivatives in products including Ferulast, Proteo C, Melanyc products, Vita-C products and selected professional formulations.</p><p><strong>What should customers know?</strong> Different forms and concentrations of vitamin C behave differently. The finished formula, packaging and directions are more informative than the ingredient name alone.</p>"
+          }
+        },
+        "b004": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Ferulic acid</h4><p><strong>What is it?</strong> Ferulic acid is a plant-derived antioxidant commonly used alongside other antioxidants in formulas for dull or environmentally stressed-looking skin.</p><p><strong>Where does it appear?</strong> It is identified as a hero ingredient in Ferulast and appears in supplier information for Melanyc Serum.</p><p><strong>What should customers know?</strong> Claims for antioxidant combinations should be based on the finished product or appropriate evidence, not transferred automatically from research on an isolated ingredient.</p>"
+          }
+        },
+        "b005": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Astaxanthin</h4><p><strong>What is it?</strong> Astaxanthin is a carotenoid antioxidant used in cosmetic formulas intended to support skin exposed to oxidative stress.</p><p><strong>Where does it appear?</strong> It is identified in the supplied materials as one of Ferulast&rsquo;s hero ingredients.</p><p><strong>What should customers know?</strong> Avoid unsupported superlatives such as &ldquo;the most powerful antioxidant.&rdquo; Describe its role within the formula without promising a clinical outcome.</p>"
+          }
+        },
+        "b006": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Vitamin E</h4><p><strong>What is it?</strong> Vitamin E is an antioxidant and skin-conditioning ingredient often used to support the formula&rsquo;s emollient and antioxidant profile.</p><p><strong>Where does it appear?</strong> The supplied materials identify vitamin E in Ferulast, Retinol One Million and other antioxidant or renewal products.</p>"
+          }
+        },
+        "b007": {
+          "type": "heading",
+          "settings": {
+            "text": "Pigmentation-focused ingredients",
+            "level": "h2"
+          }
+        },
+        "b008": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Niacinamide</h4><p><strong>What is it?</strong> Niacinamide is a form of vitamin B3 widely used to support the skin barrier, improve the appearance of uneven tone and help balance oily-looking skin.</p><p><strong>Where does it appear?</strong> The supplied SkinClinic materials identify niacinamide or nicotinamide in products across the Melanyc and acne-support ranges, including Zalyc Serum and Balance Lotion.</p>"
+          }
+        },
+        "b009": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Tranexamic acid</h4><p><strong>What is it?</strong> Topical tranexamic acid is used in cosmetic formulas developed to improve the appearance of uneven tone and visible discolouration.</p><p><strong>Where does it appear?</strong> It is listed as a key active in the supplied information for Melanyc Serum.</p><p><strong>What should customers know?</strong> Do not confuse a topical cosmetic formulation with medical uses of tranexamic acid.</p>"
+          }
+        },
+        "b010": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Kojic acid</h4><p><strong>What is it?</strong> Kojic acid is used in pigmentation-focused skincare to support a more even-looking complexion.</p><p><strong>Where does it appear?</strong> It is identified in supplier materials for Melanyc and Melanyc Daily.</p><p><strong>What should customers know?</strong> Suitability and frequency depend on the complete formula and individual tolerance.</p>"
+          }
+        },
+        "b011": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Arbutin</h4><p><strong>What is it?</strong> Arbutin is a cosmetic ingredient used in products designed to improve the appearance of dark spots and uneven tone.</p><p><strong>Where does it appear?</strong> It is identified in the supplied materials for Melanyc, Melanyc Daily and Melanyc Serum.</p>"
+          }
+        },
+        "b012": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Liquorice extract</h4><p><strong>What is it?</strong> Liquorice-derived ingredients are used in skincare for soothing and complexion-supporting properties.</p><p><strong>Where does it appear?</strong> Supplier materials identify liquorice extract in the Melanyc family and Rosanic Cream.</p>"
+          }
+        },
+        "b013": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Hexylresorcinol</h4><p><strong>What is it?</strong> Hexylresorcinol is used in cosmetic formulas focused on the appearance of uneven pigmentation.</p><p><strong>Where does it appear?</strong> It is identified in the supplied materials for Melanyc Daily and Melanyc Serum.</p>"
+          }
+        },
+        "b014": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Phytic acid</h4><p><strong>What is it?</strong> Phytic acid is used in some pigmentation and exfoliation formulas for its chelating, antioxidant and skin-renewal-supporting role.</p><p><strong>Where does it appear?</strong> It is identified in supplied information for Melanyc, Melanyc Daily and Balance Lotion.</p>"
+          }
+        },
+        "b015": {
+          "type": "heading",
+          "settings": {
+            "text": "Renewal and texture",
+            "level": "h2"
+          }
+        },
+        "b016": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Retinol, retinal and retinyl palmitate</h4><p><strong>What is it?</strong> Retinoids are vitamin A derivatives used in skincare to support cell renewal and improve the appearance of texture, fine lines and uneven tone.</p><p><strong>Where does it appear?</strong> Retiplus is described as a retinal-based or retinoid night product, subject to current-label confirmation; Retinol One Million as a retinol booster containing retinyl palmitate in the supplied technical material; Retinol 300 as a professional cabin product.</p><p><strong>What should customers know?</strong> Retinoids can cause dryness or irritation, particularly during introduction. Follow the current label, introduce gradually when directed and use suitable daytime photoprotection. Pregnancy or breastfeeding guidance must follow the current manufacturer warning and professional advice.</p>"
+          }
+        },
+        "b017": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Glycolic acid</h4><p><strong>What is it?</strong> Glycolic acid is an alpha hydroxy acid used to exfoliate the skin surface and improve the appearance of texture and radiance.</p><p><strong>Where does it appear?</strong> It is identified in SkinClinic pigmentation, acne-support and professional exfoliation materials, including Melanyc products and Glicosyl.</p>"
+          }
+        },
+        "b018": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Salicylic acid</h4><p><strong>What is it?</strong> Salicylic acid is a beta hydroxy acid commonly used in products for oily, blemish-prone or congested skin.</p><p><strong>Where does it appear?</strong> Supplier information identifies it in Zalyc Serum, Glicosyl and selected professional products.</p><p><strong>What should customers know?</strong> Avoid combining several exfoliating products without understanding the total routine and tolerance.</p>"
+          }
+        },
+        "b019": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Azelaic acid</h4><p><strong>What is it?</strong> Azelaic acid is used in cosmetic skincare for uneven tone, visible redness and blemish-prone skin.</p><p><strong>Where does it appear?</strong> It is identified in the supplied information for Zalyc Serum and professional Azalyc products.</p><p><strong>What should customers know?</strong> A cosmetic product containing azelaic acid should not be represented as equivalent to a prescription or medical treatment.</p>"
+          }
+        },
+        "b020": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Lactic acid</h4><p><strong>What is it?</strong> Lactic acid is an alpha hydroxy acid used for surface exfoliation and hydration support.</p><p><strong>Where does it appear?</strong> It is identified in Balance Lotion and the professional Lactic Cleansing Solution.</p>"
+          }
+        },
+        "b021": {
+          "type": "heading",
+          "settings": {
+            "text": "Hydration and barrier support",
+            "level": "h2"
+          }
+        },
+        "b022": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Hyaluronic acid</h4><p><strong>What is it?</strong> Hyaluronic acid is a humectant that attracts and retains water, helping skin appear hydrated and comfortable.</p><p><strong>Where does it appear?</strong> The supplied materials identify different molecular weights of hyaluronic acid in Hialucos and list it in products including Ferulast, Glicosyl, Redensity Serum and professional vials.</p>"
+          }
+        },
+        "b023": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Ceramides</h4><p><strong>What is it?</strong> Ceramides are lipid components naturally present in the skin barrier. In skincare, they are used to support moisture retention and barrier function.</p><p><strong>Where does it appear?</strong> Supplier materials identify ceramides in Retiplus and Redensity.</p>"
+          }
+        },
+        "b024": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Squalane</h4><p><strong>What is it?</strong> Squalane is an emollient used to soften the skin and support moisture retention.</p><p><strong>Where does it appear?</strong> Vegetal squalane is identified in the supplied information for Redensity.</p>"
+          }
+        },
+        "b025": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Allantoin</h4><p><strong>What is it?</strong> Allantoin is a skin-conditioning ingredient used to support comfort and softness.</p><p><strong>Where does it appear?</strong> It is identified in Balance Lotion and Restoring Cream.</p>"
+          }
+        },
+        "b026": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Alpha-bisabolol</h4><p><strong>What is it?</strong> Alpha-bisabolol is a soothing skin-conditioning ingredient commonly associated with chamomile.</p><p><strong>Where does it appear?</strong> It is identified in products including Glicosyl, Helixyl, Restoring Cream, Rosanic Cream and Hydro-Nourishing Cream.</p>"
+          }
+        },
+        "b027": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Aloe vera</h4><p><strong>What is it?</strong> Aloe vera is used in skincare to support hydration and skin comfort.</p><p><strong>Where does it appear?</strong> The supplied materials identify it in M Cream, Sensitive Cleanser, Rosanic Cream and Aloe Vera Gel 200%, among other products.</p>"
+          }
+        },
+        "b028": {
+          "type": "heading",
+          "settings": {
+            "text": "Firming and peptide ingredients",
+            "level": "h2"
+          }
+        },
+        "b029": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Peptides</h4><p><strong>What is it?</strong> Peptides are short chains of amino acids used in cosmetic formulas for skin-conditioning and visible-ageing objectives.</p><p><strong>Where does it appear?</strong> The SkinClinic materials identify different peptides in professional vials, Redensity products, M Cream and selected anti-ageing products.</p><p><strong>What should customers know?</strong> &ldquo;Peptide&rdquo; is a broad category. Product pages should identify the actual peptide only when verified.</p>"
+          }
+        },
+        "b030": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>DMAE</h4><p><strong>What is it?</strong> DMAE is used in cosmetic products positioned around the appearance of firmness and facial contour.</p><p><strong>Where does it appear?</strong> It is identified in Proteo C, DMAE Cream and selected professional products.</p>"
+          }
+        },
+        "b031": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Soy isoflavones</h4><p><strong>What is it?</strong> Soy isoflavones are plant-derived ingredients used in some moisturising and visible-ageing formulas.</p><p><strong>Where does it appear?</strong> Supplier materials identify soy isoflavones in M Cream and Retiplus.</p>"
+          }
+        },
+        "b032": {
+          "type": "heading",
+          "settings": {
+            "text": "Ingredients for oily-looking skin",
+            "level": "h2"
+          }
+        },
+        "b033": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Zinc</h4><p><strong>What is it?</strong> Zinc compounds are used in some products for oily or blemish-prone skin to support oil-control and skin-conditioning objectives.</p><p><strong>Where does it appear?</strong> Zinc is identified in the supplied information for Zalyc Serum.</p>"
+          }
+        },
+        "b034": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Jojoba and moringa</h4><p><strong>What is it?</strong> These plant-derived ingredients may be used as emollients or skin-conditioning components depending on their form within a formula.</p><p><strong>Where does it appear?</strong> Supplier materials identify jojoba and moringa in selected products including Vita-C8, Retiplus, Rosanic Cream and Hydro-Nourishing Cream.</p>"
+          }
+        },
+        "b035": {
+          "type": "divider",
+          "settings": {}
+        },
+        "b036": {
+          "type": "heading",
+          "settings": {
+            "text": "How to use this ingredient library",
+            "level": "h2"
+          }
+        },
+        "b037": {
+          "type": "richtext",
+          "settings": {
+            "content": "<ol><li>Begin with your primary skin concern.</li><li>Review the full product rather than choosing from one ingredient alone.</li><li>Confirm whether the product is for home or professional use.</li><li>Follow the current label and usage instructions.</li><li>Introduce active products carefully and monitor tolerance.</li><li>Seek professional advice for persistent, severe or diagnosed concerns.</li></ol>"
+          }
+        },
+        "b038": {
+          "type": "notice",
+          "settings": {
+            "label": "Ingredient information notice",
+            "content": "<p>Ingredient references on this page are based on SkinClinic materials supplied to Curative and must be checked against current product labels before publication. Formulations can change and may differ between markets. This library is educational and does not establish that every ingredient is present at a clinically effective concentration or that every product is suitable for every user.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b001",
+        "b002",
+        "b003",
+        "b004",
+        "b005",
+        "b006",
+        "b007",
+        "b008",
+        "b009",
+        "b010",
+        "b011",
+        "b012",
+        "b013",
+        "b014",
+        "b015",
+        "b016",
+        "b017",
+        "b018",
+        "b019",
+        "b020",
+        "b021",
+        "b022",
+        "b023",
+        "b024",
+        "b025",
+        "b026",
+        "b027",
+        "b028",
+        "b029",
+        "b030",
+        "b031",
+        "b032",
+        "b033",
+        "b034",
+        "b035",
+        "b036",
+        "b037",
+        "b038"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "eyebrow": "Ingredient Library",
+        "heading": "Understand the ingredients in your routine",
+        "intro": ""
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main"
+  ]
+}

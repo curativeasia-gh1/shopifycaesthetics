@@ -6,9 +6,16 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "color_scheme": "scheme-1"
+      }
     }
   },
   "order": [
+    "breadcrumbs",
     "main"
   ]
 }

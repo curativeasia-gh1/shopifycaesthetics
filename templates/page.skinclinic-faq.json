@@ -1,0 +1,203 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "color_scheme": "scheme-1"
+      }
+    },
+    "intro": {
+      "type": "editorial-article",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "eyebrow": "SkinClinic",
+        "heading": "Frequently asked questions about SkinClinic",
+        "intro": ""
+      }
+    },
+    "faq": {
+      "type": "faq-accordion",
+      "blocks": {
+        "q001": {
+          "type": "question",
+          "settings": {
+            "question": "What is SkinClinic?",
+            "answer": "<p>SkinClinic is a Spanish professional dermocosmetic brand with more than 30 years of skincare-development experience. Its portfolio includes professional cabin products and home-care products organised around concerns such as pigmentation, oily or blemish-prone skin, visible ageing, sensitivity, dehydration and recovery.</p>"
+          }
+        },
+        "q002": {
+          "type": "question",
+          "settings": {
+            "question": "Who manages SkinClinic enquiries through C-Aesthetics?",
+            "answer": "<p>C-Aesthetics is managed by Curative Pte Ltd in Singapore. Curative supports selected product access, information and professional enquiries. The exact range and services available may vary by market.</p>"
+          }
+        },
+        "q003": {
+          "type": "question",
+          "settings": {
+            "question": "Is SkinClinic a medical skincare brand?",
+            "answer": "<p>SkinClinic has a professional and medical-dispensing heritage, but individual products may be classified as cosmetics or professional-use products depending on the product and market. &ldquo;Professional&rdquo; does not automatically mean that a product is a medicine or that it treats a disease.</p>"
+          }
+        },
+        "q004": {
+          "type": "question",
+          "settings": {
+            "question": "Is every SkinClinic product suitable for home use?",
+            "answer": "<p>No. The SkinClinic portfolio includes both home-care and professional cabin products. Products marked for professional use should be used only by appropriately qualified practitioners and according to current manufacturer instructions.</p>"
+          }
+        },
+        "q005": {
+          "type": "question",
+          "settings": {
+            "question": "Can consumers buy SkinClinic from C-Aesthetics?",
+            "answer": "<p>Consumers may purchase products that are offered for direct online sale and appropriate for home use. Some products may require a professional enquiry or may not be offered online because of their intended use, product classification or local availability.</p>"
+          }
+        },
+        "q006": {
+          "type": "question",
+          "settings": {
+            "question": "Which SkinClinic products are designed for pigmentation concerns?",
+            "answer": "<p>The Melanyc range is SkinClinic&rsquo;s main pigmentation-focused family. Selected products include Melanyc Cream for intensive evening care, Melanyc Daily for maintenance-focused care and Melanyc Serum as a lightweight serum step. The right choice depends on skin type, tolerance and professional guidance.</p>"
+          }
+        },
+        "q007": {
+          "type": "question",
+          "settings": {
+            "question": "Does SkinClinic have products for oily or blemish-prone skin?",
+            "answer": "<p>Yes. Selected products are designed to support cleansing, oil control, congestion and uneven-looking texture. Examples include Glicolyc Gel Clean, Balance Lotion and Zalyc Serum. These are cosmetic skincare products and should not be described as curing acne.</p>"
+          }
+        },
+        "q008": {
+          "type": "question",
+          "settings": {
+            "question": "What is Zalyc Serum used for?",
+            "answer": "<p>Zalyc Serum is positioned as a lightweight serum for combination, oily or congestion-prone skin. It is intended to help reduce the appearance of excess shine, refine visible pores and support smoother-looking texture.</p>"
+          }
+        },
+        "q009": {
+          "type": "question",
+          "settings": {
+            "question": "Which SkinClinic products support sensitive or redness-prone skin?",
+            "answer": "<p>The selected sensitive-skin portfolio may include Rosanic Cream, Sensitive Cleanser, Refresh Toner, Hydro-Nourishing Cream and appropriate recovery products. Suitability depends on the individual product and the customer&rsquo;s skin condition.</p>"
+          }
+        },
+        "q010": {
+          "type": "question",
+          "settings": {
+            "question": "Does Rosanic Cream treat rosacea?",
+            "answer": "<p>Rosanic Cream should be positioned as cosmetic care for sensitive, reactive or redness-prone skin. It should not be represented as diagnosing, treating or curing rosacea. Anyone with persistent or medically diagnosed rosacea should consult a qualified healthcare professional.</p>"
+          }
+        },
+        "q011": {
+          "type": "question",
+          "settings": {
+            "question": "Which SkinClinic products are intended for visible ageing?",
+            "answer": "<p>Selected options include Ferulast for antioxidant support, Retiplus for night renewal, Redensity for hydration and firmness, Proteo C for dull-looking skin and Retinol One Million as an intensive retinol product. Product selection should consider experience with active ingredients, tolerance and daytime photoprotection.</p>"
+          }
+        },
+        "q012": {
+          "type": "question",
+          "settings": {
+            "question": "How should Retiplus be introduced into a routine?",
+            "answer": "<p>Retiplus is positioned as retinoid night care. Follow the current product label and introduce it according to professional guidance, especially if the skin is sensitive or already exposed to exfoliating products. Use suitable daytime photoprotection. Do not publish a fixed frequency until verified against the current label.</p>"
+          }
+        },
+        "q013": {
+          "type": "question",
+          "settings": {
+            "question": "What is Ferulast used for?",
+            "answer": "<p>Ferulast is positioned as an antioxidant serum for dull, dehydrated or environmentally stressed-looking skin. Supplier materials identify ferulic acid, vitamin C, astaxanthin, hyaluronic acid and vitamin E as hero ingredients, subject to confirmation against the current product label.</p>"
+          }
+        },
+        "q014": {
+          "type": "question",
+          "settings": {
+            "question": "Which products may support post-procedure care?",
+            "answer": "<p>The supplied SkinClinic materials identify Hialucos, Restoring Cream and Ferulast within hydration or recovery-related routines. The correct product and timing depend on the procedure, current skin condition and practitioner instructions. Do not apply products to compromised skin unless specifically directed.</p>"
+          }
+        },
+        "q015": {
+          "type": "question",
+          "settings": {
+            "question": "What is the difference between a cabin product and a home-care product?",
+            "answer": "<p>A cabin product is intended for use within a professional treatment setting. A home-care product is designed for the customer&rsquo;s routine outside the clinic. Some product families support both settings, but the products and usage instructions are not interchangeable.</p>"
+          }
+        },
+        "q016": {
+          "type": "question",
+          "settings": {
+            "question": "Can I combine products from different SkinClinic ranges?",
+            "answer": "<p>Products may sometimes be combined across concerns&mdash;for example, antioxidant, hydration and pigmentation products&mdash;but compatibility depends on the formulas, routine and skin tolerance. Avoid introducing several active products at the same time without appropriate guidance.</p>"
+          }
+        },
+        "q017": {
+          "type": "question",
+          "settings": {
+            "question": "Are SkinClinic formulas and ingredients the same in every country?",
+            "answer": "<p>Not necessarily. Product availability, formulations, labels and approved claims may differ by market or change over time. Always use the ingredient list and instructions on the product actually supplied.</p>"
+          }
+        },
+        "q018": {
+          "type": "question",
+          "settings": {
+            "question": "Does Curative provide support for clinics?",
+            "answer": "<p>Curative may support professional partners with range planning, onboarding, product education, clinic-to-home routine development, launch materials and regional supply. Available services should be confirmed directly with the Curative team.</p>"
+          }
+        },
+        "q019": {
+          "type": "question",
+          "settings": {
+            "question": "How can a clinic enquire about SkinClinic?",
+            "answer": "<p>Use the professional enquiry form and provide your name, clinic or organisation, professional role, country, contact details and the main product categories of interest.</p>"
+          }
+        },
+        "q020": {
+          "type": "question",
+          "settings": {
+            "question": "Where can I find the full ingredient list for a product?",
+            "answer": "<p>The full and current ingredient list should appear on the individual product page and product packaging. If online information differs from the product label, contact C-Aesthetics before use and treat the current supplied label as the primary reference.</p>"
+          }
+        },
+        "q021": {
+          "type": "question",
+          "settings": {
+            "question": "When should I seek professional advice?",
+            "answer": "<p>Seek advice if you have a diagnosed skin condition, persistent or severe symptoms, broken or infected skin, a history of significant reactions, or uncertainty about using active or post-procedure products. Stop using a product and seek appropriate advice if an unexpected reaction occurs.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q001",
+        "q002",
+        "q003",
+        "q004",
+        "q005",
+        "q006",
+        "q007",
+        "q008",
+        "q009",
+        "q010",
+        "q011",
+        "q012",
+        "q013",
+        "q014",
+        "q015",
+        "q016",
+        "q017",
+        "q018",
+        "q019",
+        "q020",
+        "q021"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "heading": ""
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "intro",
+    "faq"
+  ]
+}
