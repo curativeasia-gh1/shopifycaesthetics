@@ -3,13 +3,6 @@
     "hero": {
       "type": "image-banner",
       "blocks": {
-        "eyebrow": {
-          "type": "text",
-          "settings": {
-            "text": "Clinical skincare, curated in Singapore",
-            "text_style": "uppercase"
-          }
-        },
         "heading": {
           "type": "heading",
           "settings": {
@@ -37,7 +30,6 @@
         }
       },
       "block_order": [
-        "eyebrow",
         "heading",
         "text",
         "buttons"
@@ -132,7 +124,7 @@
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
-        "description": "A merchant-selected edit of dermocosmetic and professional aesthetic products.",
+        "description": "<p>A merchant-selected edit of dermocosmetic and professional aesthetic products.</p>",
         "show_description": true,
         "description_style": "body",
         "collection": "all",
@@ -209,7 +201,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "We curate dermocosmetic and professional aesthetic solutions according to formulation, intended application and relevance to defined skin concerns. Clear product information helps customers understand what a product is, who it is for and where it belongs in a routine or professional protocol.",
+            "text": "<p>We curate dermocosmetic and professional aesthetic solutions according to formulation, intended application and relevance to defined skin concerns. Clear product information helps customers understand what a product is, who it is for and where it belongs in a routine or professional protocol.</p>",
             "text_style": "body"
           }
         },
@@ -236,7 +228,7 @@
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "section_color_scheme": true,
+        "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-1",
         "padding_top": 52,
         "padding_bottom": 52
