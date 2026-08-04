@@ -55,6 +55,10 @@
       "next_slide": "向右滑动",
       "previous_slide": "向左滑动",
       "name": "滑块"
+    },
+    "breadcrumbs": {
+      "label": "Breadcrumbs",
+      "home": "Home"
     }
   },
   "newsletter": {

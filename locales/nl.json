@@ -55,6 +55,10 @@
       "next_slide": "Naar rechts schuiven",
       "previous_slide": "Naar links schuiven",
       "name": "Schuifregelaar"
+    },
+    "breadcrumbs": {
+      "label": "Breadcrumbs",
+      "home": "Home"
     }
   },
   "newsletter": {

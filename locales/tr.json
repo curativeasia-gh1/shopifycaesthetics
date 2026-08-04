@@ -55,6 +55,10 @@
       "next_slide": "Sağa kaydır",
       "previous_slide": "Sola kaydır",
       "name": "Kaydırıcı"
+    },
+    "breadcrumbs": {
+      "label": "Breadcrumbs",
+      "home": "Home"
     }
   },
   "newsletter": {
