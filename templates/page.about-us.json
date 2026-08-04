@@ -1,0 +1,117 @@
+{
+  "sections": {
+    "intro": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Skincare built on evidence, not trends",
+            "heading_size": "hxl"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>C-Aesthetics was founded on a simple idea: skincare should be judged by results, not packaging. We work with dermatologists and formulation chemists to build routines that address real skin concerns \u2014 hydration, barrier repair, visible aging, and sensitivity \u2014 using ingredients at concentrations that are actually effective.</p>"
+          }
+        }
+      },
+      "block_order": ["heading", "text"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 36
+      }
+    },
+    "approach": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "How we formulate",
+            "text_style": "uppercase",
+            "text_size": "small"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "From lab to routine",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every formula starts with a specific skin outcome, moves through dermatologist review, and is tested for tolerability and efficacy before it's approved for release. We publish the purpose of every core ingredient on the product page \u2014 no proprietary mystery blends.</p>"
+          }
+        }
+      },
+      "block_order": ["caption", "heading", "text"],
+      "settings": {
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "values": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Clinically tested",
+            "icon": "check_mark",
+            "row_content": "<p>Formulas are evaluated for tolerability and efficacy before launch.</p>"
+          }
+        },
+        "row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cruelty-free, always",
+            "icon": "heart",
+            "row_content": "<p>We never test on animals, and we work only with suppliers who share that standard.</p>"
+          }
+        },
+        "row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Transparent ingredient lists",
+            "icon": "leaf",
+            "row_content": "<p>Full INCI ingredient lists are published on every product page, with plain-language explanations of key actives.</p>"
+          }
+        }
+      },
+      "block_order": ["row-1", "row-2", "row-3"],
+      "settings": {
+        "caption": "",
+        "heading": "What we stand for",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": ["intro", "approach", "values"]
+}

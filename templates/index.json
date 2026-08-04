@@ -1,0 +1,332 @@
+{
+  "sections": {
+    "hero": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Clinically-tested skincare, formulated for visible results",
+            "heading_size": "hxl"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Dermatologist-informed formulas built around your skin's real needs.",
+            "text_style": "body"
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop best sellers",
+            "button_link_1": "shopify://collections/best-sellers",
+            "button_style_secondary_1": false,
+            "button_label_2": "Explore facial care",
+            "button_link_2": "shopify://collections/facial-care",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": ["heading", "text", "buttons"],
+      "settings": {
+        "image_overlay_opacity": 10,
+        "image_height": "large",
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "image_behavior": "none",
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-2",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": true
+      }
+    },
+    "shop-by-category": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-1": {
+          "type": "featured_collection",
+          "settings": { "collection": "facial-care" }
+        },
+        "collection-2": {
+          "type": "featured_collection",
+          "settings": { "collection": "body-care" }
+        },
+        "collection-3": {
+          "type": "featured_collection",
+          "settings": { "collection": "anti-aging" }
+        },
+        "collection-4": {
+          "type": "featured_collection",
+          "settings": { "collection": "supplements" }
+        }
+      },
+      "block_order": ["collection-1", "collection-2", "collection-3", "collection-4"],
+      "settings": {
+        "title": "Shop by category",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 52,
+        "padding_bottom": 28
+      }
+    },
+    "brand-story": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Backed by science, inspired by skin",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every C-Aesthetics formula is developed with dermatologists and tested for real, measurable results \u2014 not just marketing claims. We combine clinically-studied active ingredients with clean, skin-safe bases to create routines that work for real, everyday skin.</p>"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Our approach",
+            "button_link_1": "shopify://pages/about-us",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": ["heading", "text", "button"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "bestsellers": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Best sellers",
+        "heading_size": "h1",
+        "description": "The formulas our customers reorder again and again.",
+        "show_description": true,
+        "description_style": "body",
+        "collection": "best-sellers",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "padding_top": 52,
+        "padding_bottom": 36
+      }
+    },
+    "technology": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "Our technology",
+            "text_style": "uppercase",
+            "text_size": "small"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "C-VITAL Complex\u2122",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A biomimetic peptide and antioxidant complex developed to support the skin barrier, improve visible texture, and reduce the look of fine lines over time \u2014 with efficacy assessed through in-house clinical testing.</p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop anti-aging",
+            "button_link": "shopify://collections/anti-aging",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": ["caption", "heading", "text", "button"],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-5",
+        "color_scheme": "scheme-5",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "why-choose-us": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Dermatologist formulated",
+            "icon": "check_mark",
+            "row_content": "<p>Every formula is developed in consultation with dermatologists and tested before it reaches your routine.</p>"
+          }
+        },
+        "row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Clean, purposeful ingredients",
+            "icon": "leaf",
+            "row_content": "<p>We choose ingredients for what they do for your skin, not for the marketing story. No unnecessary fillers.</p>"
+          }
+        },
+        "row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cruelty-free",
+            "icon": "heart",
+            "row_content": "<p>None of our products or ingredients are tested on animals, at any stage of development.</p>"
+          }
+        },
+        "row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Fast, tracked shipping",
+            "icon": "truck",
+            "row_content": "<p>Every order ships with tracking, with expedited options available at checkout.</p>"
+          }
+        }
+      },
+      "block_order": ["row-1", "row-2", "row-3", "row-4"],
+      "settings": {
+        "caption": "",
+        "heading": "The C-Aesthetics difference",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "My skin has never felt this hydrated and even-toned. The routine is simple and I saw a difference within a few weeks.",
+            "author": "Maria G.",
+            "author_detail": "Verified Buyer",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "Finally a skincare line that explains why each ingredient is there. My redness has calmed down noticeably.",
+            "author": "Alex T.",
+            "author_detail": "Verified Buyer",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 4,
+            "quote": "The anti-aging set is now a permanent part of my nightly routine. Lightweight but you can feel it working.",
+            "author": "Priya S.",
+            "author_detail": "Verified Buyer",
+            "color_scheme": "scheme-2"
+          }
+        }
+      },
+      "block_order": ["testimonial-1", "testimonial-2", "testimonial-3"],
+      "settings": {
+        "heading": "Loved by our customers",
+        "heading_size": "h0",
+        "subheading": "Real results from real skin",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join the C-Aesthetics community",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Skincare tips, early access to new formulas, and a welcome discount on your first order.</p>"
+          }
+        },
+        "email_form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": ["heading", "paragraph", "email_form"],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "shop-by-category",
+    "brand-story",
+    "bestsellers",
+    "technology",
+    "why-choose-us",
+    "testimonials",
+    "newsletter"
+  ]
+}
