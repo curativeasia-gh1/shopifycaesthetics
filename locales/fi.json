@@ -55,6 +55,10 @@
       "next_slide": "Liu'uta oikealle",
       "previous_slide": "Liu'uta vasemmalle",
       "name": "Liukusäädin"
+    },
+    "breadcrumbs": {
+      "label": "Breadcrumbs",
+      "home": "Home"
     }
   },
   "newsletter": {

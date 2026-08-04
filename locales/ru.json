@@ -55,6 +55,10 @@
       "next_slide": "Листать вперед",
       "previous_slide": "Листать назад",
       "name": "Ползунок"
+    },
+    "breadcrumbs": {
+      "label": "Breadcrumbs",
+      "home": "Home"
     }
   },
   "newsletter": {

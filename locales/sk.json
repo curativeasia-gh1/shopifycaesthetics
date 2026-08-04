@@ -55,6 +55,10 @@
       "next_slide": "Posunúť doprava",
       "previous_slide": "Posunúť doľava",
       "name": "Jazdec"
+    },
+    "breadcrumbs": {
+      "label": "Breadcrumbs",
+      "home": "Home"
     }
   },
   "newsletter": {

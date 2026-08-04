@@ -55,6 +55,10 @@
       "next_slide": "Slinkti dešinėn",
       "previous_slide": "Slinkti kairėn",
       "name": "Slankiklis"
+    },
+    "breadcrumbs": {
+      "label": "Breadcrumbs",
+      "home": "Home"
     }
   },
   "newsletter": {

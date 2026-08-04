@@ -55,6 +55,10 @@
       "next_slide": "右にスライド",
       "previous_slide": "左にスライド",
       "name": "スライダー"
+    },
+    "breadcrumbs": {
+      "label": "Breadcrumbs",
+      "home": "Home"
     }
   },
   "newsletter": {
