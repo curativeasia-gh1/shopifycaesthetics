@@ -1,0 +1,25 @@
+{{ 'section-breadcrumbs.css' | asset_url | stylesheet_tag }}
+
+<div class="breadcrumbs-wrapper page-width color-{{ section.settings.color_scheme }}">
+  {% render 'breadcrumbs' %}
+</div>
+
+{% schema %}
+{
+  "name": "Breadcrumbs",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Breadcrumbs"
+    }
+  ]
+}
+{% endschema %}

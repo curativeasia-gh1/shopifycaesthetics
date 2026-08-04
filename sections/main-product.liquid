@@ -105,6 +105,10 @@
                         {{ product.title | escape }}
                       </h2>
                     </a>
+                    {% render 'professional-badge', product: product %}
+                    {%- if product.metafields.custom.short_benefit.value != blank -%}
+                      <p class="product__short-benefit">{{ product.metafields.custom.short_benefit.value }}</p>
+                    {%- endif -%}
                   </div>
                 {%- when 'price' -%}
                   <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>

@@ -8,8 +8,8 @@
         "color_scheme": "scheme-1",
         "show_line_separator": true,
         "show_social": false,
-        "auto_rotate": true,
-        "change_slides_speed": 6,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
         "enable_country_selector": false,
         "enable_language_selector": false
       },
@@ -17,16 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Complimentary shipping on orders over $75",
-            "text_alignment": "center",
-            "color_scheme": "scheme-1",
-            "link": ""
-          }
-        },
-        "announcement-bar-1": {
-          "type": "announcement",
-          "settings": {
-            "text": "Dermatologist-formulated \u00b7 Clinically tested",
+            "text": "Complimentary Singapore delivery on orders over S$100",
             "text_alignment": "center",
             "color_scheme": "scheme-1",
             "link": ""
@@ -34,8 +25,7 @@
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "announcement-bar-1"
+        "announcement-bar-0"
       ]
     },
     "header": {

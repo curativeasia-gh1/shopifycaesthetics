@@ -1,0 +1,149 @@
+{%- comment -%}
+  Structured product-information accordion. Every row is sourced from a `custom.*`
+  product metafield and only renders when that metafield is populated, so the
+  section stays silent on products where the field hasn't been filled in yet.
+{%- endcomment -%}
+{{ 'section-product-metafield-tabs.css' | asset_url | stylesheet_tag }}
+{{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign mf = product.metafields.custom
+-%}
+
+<div class="product-tabs page-width page-width--narrow color-{{ section.settings.color_scheme }}">
+
+  {%- if mf.who_its_for.value != blank -%}
+    <details class="product-tabs__item accordion">
+      <summary class="product-tabs__summary"><h2 class="product-tabs__heading">Who it's for</h2></summary>
+      <div class="product-tabs__body rte">{{ mf.who_its_for.value }}</div>
+    </details>
+  {%- endif -%}
+
+  {%- if mf.skin_concerns.value != blank -%}
+    <details class="product-tabs__item accordion">
+      <summary class="product-tabs__summary"><h2 class="product-tabs__heading">Skin concerns</h2></summary>
+      <div class="product-tabs__body">
+        <ul class="product-tabs__pill-list">
+          {%- for concern in mf.skin_concerns.value -%}
+            <li class="product-tabs__pill">{{ concern.title | default: concern }}</li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </details>
+  {%- endif -%}
+
+  {%- if mf.key_benefits.value != blank -%}
+    <details class="product-tabs__item accordion">
+      <summary class="product-tabs__summary"><h2 class="product-tabs__heading">Key benefits</h2></summary>
+      <div class="product-tabs__body">
+        <ul class="product-tabs__list">
+          {%- for benefit in mf.key_benefits.value -%}
+            <li>{{ benefit }}</li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </details>
+  {%- endif -%}
+
+  {%- if mf.key_ingredients.value != blank -%}
+    <details class="product-tabs__item accordion">
+      <summary class="product-tabs__summary"><h2 class="product-tabs__heading">Key ingredients</h2></summary>
+      <div class="product-tabs__body">
+        <ul class="product-tabs__pill-list">
+          {%- for ingredient in mf.key_ingredients.value -%}
+            {%- if ingredient.url -%}
+              <li class="product-tabs__pill"><a href="{{ ingredient.url }}">{{ ingredient.title }}</a></li>
+            {%- else -%}
+              <li class="product-tabs__pill">{{ ingredient.title | default: ingredient }}</li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </div>
+    </details>
+  {%- endif -%}
+
+  {%- if mf.how_to_use.value != blank -%}
+    <details class="product-tabs__item accordion">
+      <summary class="product-tabs__summary"><h2 class="product-tabs__heading">How to use</h2></summary>
+      <div class="product-tabs__body rte">{{ mf.how_to_use.value }}</div>
+    </details>
+  {%- endif -%}
+
+  {%- if mf.routine_step.value != blank -%}
+    <details class="product-tabs__item accordion">
+      <summary class="product-tabs__summary"><h2 class="product-tabs__heading">Routine position</h2></summary>
+      <div class="product-tabs__body">
+        <p>{{ mf.routine_step.value }}</p>
+      </div>
+    </details>
+  {%- endif -%}
+
+  {%- if mf.professional_only.value == true or mf.professional_notice.value != blank -%}
+    <details class="product-tabs__item accordion" open>
+      <summary class="product-tabs__summary"><h2 class="product-tabs__heading">Professional-use notice</h2></summary>
+      <div class="product-tabs__body rte">
+        {%- if mf.professional_notice.value != blank -%}
+          {{ mf.professional_notice.value }}
+        {%- else -%}
+          {{ settings.professional_use_notice }}
+        {%- endif -%}
+      </div>
+    </details>
+  {%- endif -%}
+
+  {%- if mf.evidence_summary.value != blank -%}
+    <details class="product-tabs__item accordion">
+      <summary class="product-tabs__summary"><h2 class="product-tabs__heading">Evidence summary</h2></summary>
+      <div class="product-tabs__body rte">{{ mf.evidence_summary.value }}</div>
+    </details>
+  {%- endif -%}
+
+  {%- if mf.full_ingredients.value != blank -%}
+    <details class="product-tabs__item accordion">
+      <summary class="product-tabs__summary"><h2 class="product-tabs__heading">Full ingredient list</h2></summary>
+      <div class="product-tabs__body">
+        <p class="product-tabs__ingredients">{{ mf.full_ingredients.value }}</p>
+      </div>
+    </details>
+  {%- endif -%}
+
+  {%- if mf.faq_items.value != blank -%}
+    <details class="product-tabs__item accordion">
+      <summary class="product-tabs__summary"><h2 class="product-tabs__heading">Frequently asked questions</h2></summary>
+      <div class="product-tabs__body">
+        {%- for item in mf.faq_items.value -%}
+          <div class="product-tabs__faq-item">
+            <p class="product-tabs__faq-question">{{ item.metafields.custom.question.value | default: item.title }}</p>
+            <div class="rte">{{ item.metafields.custom.answer.value }}</div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </details>
+  {%- endif -%}
+
+  {%- if settings.educational_disclaimer != blank -%}
+    <div class="product-tabs__disclaimer rte caption-large">
+      {{ settings.educational_disclaimer }}
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Product info (metafields)",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product info (metafields)"
+    }
+  ]
+}
+{% endschema %}

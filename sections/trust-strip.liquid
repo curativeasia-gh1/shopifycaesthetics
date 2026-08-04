@@ -1,0 +1,101 @@
+{{ 'section-trust-strip.css' | asset_url | stylesheet_tag }}
+
+<div class="trust-strip color-{{ section.settings.color_scheme }} gradient">
+  <div class="trust-strip__inner page-width">
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'point' -%}
+        <div class="trust-strip__item" {{ block.shopify_attributes }}>
+          {%- if block.settings.icon != blank -%}
+            <div class="trust-strip__icon">{{ block.settings.icon }}</div>
+          {%- endif -%}
+          <div class="trust-strip__text">
+            <p class="trust-strip__title">{{ block.settings.title | escape }}</p>
+            {%- if block.settings.description != blank -%}
+              <p class="trust-strip__description">{{ block.settings.description | escape }}</p>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Trust strip",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-2"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "point",
+      "name": "Trust point",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon (optional emoji or short glyph)",
+          "default": "＋"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Science-led curation"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description",
+          "default": "Products selected for clear applications and skin concerns."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trust strip",
+      "blocks": [
+        {
+          "type": "point",
+          "settings": {
+            "icon": "＋",
+            "title": "Science-led curation",
+            "description": "Products selected for clear applications and skin concerns."
+          }
+        },
+        {
+          "type": "point",
+          "settings": {
+            "icon": "◇",
+            "title": "Singapore-based",
+            "description": "Managed locally by Curative Pte Ltd."
+          }
+        },
+        {
+          "type": "point",
+          "settings": {
+            "icon": "○",
+            "title": "Secure checkout",
+            "description": "Protected payments through Shopify."
+          }
+        },
+        {
+          "type": "point",
+          "settings": {
+            "icon": "△",
+            "title": "Human support",
+            "description": "Product guidance before and after purchase."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

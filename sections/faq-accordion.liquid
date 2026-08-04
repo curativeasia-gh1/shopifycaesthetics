@@ -1,0 +1,150 @@
+{{ 'section-faq-accordion.css' | asset_url | stylesheet_tag }}
+
+<div class="faq-accordion color-{{ section.settings.color_scheme }} gradient">
+  <div class="faq-accordion__inner page-width page-width--narrow">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="faq-accordion__heading">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+
+    <div class="faq-accordion__list">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'question' -%}
+          <details class="faq-accordion__item" {{ block.shopify_attributes }}>
+            <summary class="faq-accordion__question">
+              <span>{{ block.settings.question | escape }}</span>
+              <span class="faq-accordion__icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-accordion__answer">
+              {{ block.settings.answer }}
+            </div>
+          </details>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{%- comment -%}
+  FAQPage structured data mirrors only the questions/answers rendered above,
+  so schema always matches visible page content.
+{%- endcomment -%}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {%- assign first = true -%}
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'question' -%}
+          {%- unless first -%},{%- endunless -%}
+          {%- assign first = false -%}
+          {
+            "@type": "Question",
+            "name": {{ block.settings.question | strip_html | json }},
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": {{ block.settings.answer | strip_html | json }}
+            }
+          }
+        {%- endif -%}
+      {%- endfor -%}
+    ]
+  }
+</script>
+
+{% schema %}
+{
+  "name": "FAQ accordion",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Frequently asked questions"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "What is dermocosmetic skincare?"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "default": "<p>Answer text.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ accordion",
+      "blocks": [
+        {
+          "type": "question",
+          "settings": {
+            "question": "What is dermocosmetic skincare?",
+            "answer": "<p>Dermocosmetic skincare sits between everyday cosmetics and dermatology-informed care. Products are formulated with concentrated active ingredients and are often selected around a specific skin concern rather than general beauty positioning.</p>"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "How do I choose products for my skin concern?",
+            "answer": "<p>Start from the skin concern you want to address, then review each product's stated purpose, suitability and usage instructions. Introduce new active ingredients gradually and monitor tolerance.</p>"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "Are all C-Aesthetics products suitable for home use?",
+            "answer": "<p>No. Some products are intended only for use by trained or qualified professionals. These are clearly labelled and are not sold for unsupervised home application.</p>"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "What is an exosome skincare product?",
+            "answer": "<p>An exosome skincare product is a topical formulation marketed with exosome-derived or extracellular-vesicle-related ingredients. Composition, source and supporting evidence can differ substantially between products.</p>"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "Is microneedling suitable for everyone?",
+            "answer": "<p>Microneedling suitability depends on individual skin condition, medical history and professional assessment. Professional microneedling devices should be used only by qualified practitioners.</p>"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "Which products can be used after an aesthetic procedure?",
+            "answer": "<p>Post-procedure product selection depends on the specific treatment, current skin condition and practitioner instructions. Always follow the guidance given by your treating professional.</p>"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "When should I consult a qualified professional?",
+            "answer": "<p>Seek advice from a qualified healthcare professional for persistent, severe or diagnosed skin conditions, or before starting a professional-use product or procedure-related routine.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

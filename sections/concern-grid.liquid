@@ -1,0 +1,114 @@
+{{ 'section-concern-grid.css' | asset_url | stylesheet_tag }}
+
+<div class="concern-grid color-{{ section.settings.color_scheme }} gradient">
+  <div class="concern-grid__inner page-width">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="concern-grid__heading {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+    {%- if section.settings.subheading != blank -%}
+      <p class="concern-grid__subheading">{{ section.settings.subheading | escape }}</p>
+    {%- endif -%}
+
+    <ul class="concern-grid__list" role="list">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'concern' -%}
+          <li class="concern-grid__item" {{ block.shopify_attributes }}>
+            <a
+              href="{{ block.settings.link | default: '#' }}"
+              class="concern-grid__card"
+            >
+              <div class="concern-grid__media">
+                {%- if block.settings.image != blank -%}
+                  {{
+                    block.settings.image
+                    | image_url: width: 700
+                    | image_tag: loading: 'lazy', sizes: '(min-width: 750px) 25vw, 50vw', widths: '350, 500, 700', alt: block.settings.title
+                  }}
+                {%- else -%}
+                  {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- endif -%}
+              </div>
+              <span class="concern-grid__title">{{ block.settings.title | escape }}</span>
+            </a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Shop by skin concern",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Shop by skin concern"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "options": [
+        { "value": "h3", "label": "Small" },
+        { "value": "h2", "label": "Medium" },
+        { "value": "h1", "label": "Large" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Start with the concern you want to address, then explore suitable product categories and routine guidance."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "concern",
+      "name": "Concern",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Acne and congestion"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link to collection or landing page"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop by skin concern",
+      "blocks": [
+        { "type": "concern", "settings": { "title": "Acne and congestion" } },
+        { "type": "concern", "settings": { "title": "Pigmentation and uneven tone" } },
+        { "type": "concern", "settings": { "title": "Sensitivity and redness" } },
+        { "type": "concern", "settings": { "title": "Dryness and barrier support" } },
+        { "type": "concern", "settings": { "title": "Fine lines and skin ageing" } },
+        { "type": "concern", "settings": { "title": "Dullness and uneven texture" } },
+        { "type": "concern", "settings": { "title": "Post-procedure recovery" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

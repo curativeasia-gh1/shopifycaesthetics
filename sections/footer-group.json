@@ -5,42 +5,34 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer-brand": {
-          "type": "brand_information",
-          "settings": {}
-        },
-        "footer-link-shop": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Shop",
-            "menu": "main-menu"
-          }
-        },
-        "footer-link-support": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Customer Care",
-            "menu": "footer"
-          }
-        },
-        "footer-text-contact": {
+        "brand": {
           "type": "text",
           "settings": {
-            "heading": "Contact",
-            "body": "<p>Questions about an order or a treatment plan? Email hello@c-aesthetics.com \u2014 update this with your real contact details in the Theme Editor.</p>"
+            "heading": "C-Aesthetics",
+            "subtext": "<p>Science-led dermocosmetics and professional aesthetic solutions, curated in Singapore. C-Aesthetics is an online store managed by Curative Pte Ltd, Singapore.</p>"
+          }
+        },
+        "shop": {
+          "type": "link_list",
+          "settings": { "heading": "Shop", "menu": "footer" }
+        },
+        "learn": {
+          "type": "link_list",
+          "settings": { "heading": "Learn", "menu": "footer" }
+        },
+        "professional-notice": {
+          "type": "text",
+          "settings": {
+            "heading": "Professional-use notice",
+            "subtext": "<p>Some products on C-Aesthetics are intended only for use by trained or qualified professionals and are not intended for unsupervised home application. See our Professional-Use Policy for details.</p>"
           }
         }
       },
-      "block_order": [
-        "footer-brand",
-        "footer-link-shop",
-        "footer-link-support",
-        "footer-text-contact"
-      ],
+      "block_order": ["brand", "shop", "learn", "professional-notice"],
       "settings": {
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-4",
         "newsletter_enable": true,
-        "newsletter_heading": "Join the C-Aesthetics community",
+        "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,
@@ -48,7 +40,7 @@
         "payment_enable": true,
         "show_policy": true,
         "margin_top": 0,
-        "padding_top": 36,
+        "padding_top": 52,
         "padding_bottom": 36
       }
     }

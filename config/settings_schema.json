@@ -1,11 +1,11 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "C-Aesthetics",
-    "theme_version": "1.0.0",
-    "theme_author": "C-Aesthetics",
+    "theme_name": "Dawn",
+    "theme_version": "15.5.0",
+    "theme_author": "Shopify",
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://help.shopify.com/manual/online-store/themes"
+    "theme_support_url": "https://support.shopify.com/"
   },
   {
     "name": "t:settings_schema.logo.name",
@@ -1449,6 +1449,61 @@
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
+      }
+    ]
+  },
+  {
+    "name": "C-Aesthetics: Organization & compliance",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Company details (structured data)"
+      },
+      {
+        "type": "text",
+        "id": "org_legal_name",
+        "label": "Legal operating company",
+        "default": "Curative Pte Ltd"
+      },
+      {
+        "type": "text",
+        "id": "org_country",
+        "label": "Company country",
+        "default": "Singapore"
+      },
+      {
+        "type": "text",
+        "id": "org_managed_statement",
+        "label": "\"Managed by\" statement (used in Organization schema and footer)",
+        "default": "C-Aesthetics is an online store managed by Curative Pte Ltd, Singapore."
+      },
+      {
+        "type": "text",
+        "id": "org_registration_number",
+        "label": "Business registration / UEN number (leave blank until confirmed by Curative)",
+        "default": ""
+      },
+      {
+        "type": "header",
+        "content": "Compliance notices"
+      },
+      {
+        "type": "richtext",
+        "id": "educational_disclaimer",
+        "label": "Standard educational disclaimer",
+        "default": "<p>Information provided by C-Aesthetics is for general educational purposes and does not replace advice, diagnosis or treatment from a qualified healthcare professional. Product suitability and results vary. Always follow the product instructions and seek professional advice where appropriate.</p>"
+      },
+      {
+        "type": "text",
+        "id": "professional_use_label",
+        "label": "Professional-use badge label",
+        "default": "Professional use only"
+      },
+      {
+        "type": "richtext",
+        "id": "professional_use_notice",
+        "label": "Professional-use notice",
+        "default": "<p>This product is intended only for use by trained or qualified professionals. It is not intended for unsupervised home application.</p>"
       }
     ]
   }
